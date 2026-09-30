@@ -1,8 +1,8 @@
-import { useState } from "react";
 import { DataTable } from "@/components/DataTable";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { mockBorrowers } from "@/lib/mockData";
+import { useEffect, useState } from "react";
+import { getBorrowers, addBorrower } from "@/lib/api";
 import { Plus, Eye, Edit } from "lucide-react";
 import { toast } from "sonner";
 import {
